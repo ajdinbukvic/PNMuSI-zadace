@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNMuSI - Zadaca 2</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="containter-fluid mx-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak1.html">Zadatak 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak2.html">Zadatak 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak3.html">Zadatak 3</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./zadatak4.html"
+                >Zadatak 4</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-3 mt-3 w-25">
+      <p>Tabela:</p>
+      <table class="table table-striped container">
+        <tbody>
+          <tr>
+            <td>x, m</td>
+            <td>0</td>
+            <td>3</td>
+            <td>6</td>
+            <td>9</td>
+            <td>12</td>
+            <td>15</td>
+            <td>18</td>
+            <td>21</td>
+            <td>24</td>
+            <td>27</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>h, m</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Izbor metode:</p>
+      <div class="mb-2">
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="direktna"
+            name="izborMetode"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="direktna">Direktna</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="lagrange"
+            name="izborMetode"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="lagrange">La-Grangeova</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="drugiNewton"
+            name="izborMetode"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="drugiNewton"
+            >Drugi Newtonov interpolacioni polinom</label
+          >
+        </div>
+      </div>
+      <label for="vrijednost" class="form-label"
+        >Vrijednost za koju se traži interpolirana vrijednost:</label
+      >
+      <input
+        type="number"
+        class="form-control mb-2"
+        id="vrijednost"
+        placeholder=""
+        value="10"
+        disabled
+        readonly
+      />
+      <p>Izbor reda polinoma:</p>
+      <div class="mb-2">
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="red-2"
+            name="izborReda"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="red-2">Drugi</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="red-3"
+            name="izborReda"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="red-3">Treći</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="red-4"
+            name="izborReda"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="red-4">Četvrti</label>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success w-100 mt-4" id="rijesi">
+        Riješi
+      </button>
+    </div>
+    <h3 class="text-center" id="rjesenje"></h3>
+    <h3 class="text-center" id="greska"></h3>
+    <table class="table table-striped container">
+      <tbody id="tabela"></tbody>
+    </table>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../script/zad4.js"></script>
+  </body>
+</html>

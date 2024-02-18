@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNMuSI - Zadaca 1</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="containter-fluid mx-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./zadatak1_3.html"
+                >Zadatak 1 i 3 - Bisekcija</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak2_3.html"
+                >Zadatak 2 i 3 - Newton</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak4.html">Zadatak 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-3 mt-3 w-25">
+      <p>Izbor jednačine:</p>
+      <div class="d-flex justify-content-center">
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="btn-check"
+            id="jednacina1"
+            name="jednacina"
+            autocomplete="off"
+          />
+          <label class="btn btn-light" for="jednacina1"
+            >y = x<sup>2</sup> - 2</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="btn-check"
+            id="jednacina2"
+            name="jednacina"
+            autocomplete="off"
+          />
+          <label class="btn btn-light" for="jednacina2"
+            >y = e<sup>x</sup> + 2<sup>-x</sup> + 2cos(x) - 6</label
+          >
+        </div>
+      </div>
+      <div class="form-check mt-2 mb-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="automatskoPopunjavanje"
+        />
+        <label class="form-check-label" for="automatskoPopunjavanje">
+          Automatski popuni parametre (Testni podaci)
+        </label>
+      </div>
+      <label for="donjaGranica" class="form-label"
+        >Donja granica intervala</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="donjaGranica"
+        placeholder=""
+      />
+      <label for="gornjaGranica" class="form-label"
+        >Gornja granica intervala</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="gornjaGranica"
+        placeholder=""
+      />
+      <label for="tacnost" class="form-label">Tačnost</label>
+      <input type="number" class="form-control" id="tacnost" placeholder="" />
+      <label for="maxIteracija" class="form-label"
+        >Maksimalan broj iteracija</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="maxIteracija"
+        placeholder=""
+        readonly
+        value="1000"
+        disabled
+      />
+      <button type="button" class="btn btn-success w-100 mt-4" id="rijesi">
+        Riješi
+      </button>
+    </div>
+    <h3 class="text-center" id="rjesenje"></h3>
+    <h3 class="text-center" id="greska"></h3>
+    <table class="table table-striped container">
+      <tbody id="tabela"></tbody>
+    </table>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../script/zad1_3.js"></script>
+  </body>
+</html>

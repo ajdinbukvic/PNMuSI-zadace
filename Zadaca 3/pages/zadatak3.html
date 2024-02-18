@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNMuSI - Zadaca 3</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="containter-fluid mx-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak1.html">Zadatak 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak2.html">Zadatak 2</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./zadatak3.html"
+                >Zadatak 3</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-3 mt-3 w-25">
+      <p>Tabela:</p>
+      <table class="table table-striped container">
+        <tbody>
+          <tr>
+            <td>h, km</td>
+            <td>1.52</td>
+            <td>3.05</td>
+            <td>4.58</td>
+            <td>6.11</td>
+            <td>7.64</td>
+            <td>9.17</td>
+          </tr>
+          <tr>
+            <td>p x 10<sup>-3</sup>, kg/m<sup>3</sup></td>
+            <td>0.86</td>
+            <td>0.73</td>
+            <td>0.62</td>
+            <td>0.53</td>
+            <td>0.44</td>
+            <td>0.37</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Izbor metode:</p>
+      <div class="mb-2">
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="mnk"
+            name="izborMetode"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="mnk"
+            >Metoda najmanjih kvadrata</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="mnkef"
+            name="izborMetode"
+            autocomplete="off"
+          />
+          <label class="form-check-label" for="mnkef"
+            >Metoda najmanjih kvadrata eksponencijalnom funkcijom</label
+          >
+        </div>
+      </div>
+      <button type="button" class="btn btn-success w-100 mt-4" id="rijesi">
+        Riješi
+      </button>
+    </div>
+    <h3 class="text-center" id="rjesenje"></h3>
+    <h3 class="text-center" id="greska"></h3>
+    <table class="table table-striped container">
+      <tbody id="tabela"></tbody>
+    </table>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../script/zad3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "jsequation-solver": "^1.0.1"
+  }
+}

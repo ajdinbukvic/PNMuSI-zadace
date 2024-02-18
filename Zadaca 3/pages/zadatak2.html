@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNMuSI - Zadaca 3</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="containter-fluid mx-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak1.html">Zadatak 1</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./zadatak2.html"
+                >Zadatak 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./zadatak3.html">Zadatak 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-3 mt-3 w-25">
+      <h3 class="text-center">
+        Metoda najmanjih kvadrata eksponencijalnom funkcijom
+      </h3>
+      <div class="form-check mt-2 mb-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="automatskoPopunjavanje"
+        />
+        <label class="form-check-label" for="automatskoPopunjavanje">
+          Automatski popuni parametre (Testni podaci)
+        </label>
+      </div>
+      <label for="brojPodataka" class="form-label">Broj podataka:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="brojPodataka"
+        placeholder=""
+      />
+      <div class="input-group mb-3 mt-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          aria-label=""
+          aria-describedby="basic-addon1"
+          readonly
+          disabled
+          value="x"
+          id="x"
+        />
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          aria-label=""
+          aria-describedby="basic-addon1"
+          readonly
+          disabled
+          value="f(x)"
+          id="fx"
+        />
+      </div>
+      <div id="tabelaPodaci"></div>
+      <button type="button" class="btn btn-success w-100 mt-4" id="rijesi">
+        Riješi
+      </button>
+    </div>
+    <h3 class="text-center" id="rjesenje"></h3>
+    <h3 class="text-center" id="greska"></h3>
+    <table class="table table-striped container">
+      <tbody id="tabela"></tbody>
+    </table>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../script/zad1_2.js"></script>
+  </body>
+</html>
